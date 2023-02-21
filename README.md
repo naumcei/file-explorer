@@ -67,6 +67,10 @@ The above command will populate the database and will generate files in a filesy
 
     storage/app/public/tmp/faker0k2Njw.log
 
+**Note:**
+The followind command will reset the database and filesystem
+`php artisan file-explorer:reset`
+
 ## Store a new file or create a folder
 
 **Create Root Folder** - create root folder
@@ -124,9 +128,11 @@ The above command will execute the following tests
 Database is storing the metadata for each file and folder, including the folder name, file name, the directory it **belongs to**, and the path to the file on the filesystem
 
 **Note:**
-The index can be created to speed up the search by filename
-`ALTER TABLE folders ADD INDEX name_idx (name);`
+The index type `FULL_TEXT` will speed up the search by name on both tables folders and files
 
+`ALTER TABLE files ADD FULLTEXT search_file_name_index (name);`
+
+    ALTER TABLE folders ADD FULLTEXT search_folder_name_index(name);
 ![enter image description here](https://raw.githubusercontent.com/naumcei/file-explorer/master/storage/screenshoots/db.png)
 
 ## Filesystem

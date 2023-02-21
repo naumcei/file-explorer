@@ -45,8 +45,8 @@
                 <li class="list-group-item">Is Root: {{($folder->parent_id) ? 'No' : 'Yes'}}</li>
                 <li class="list-group-item">Parent Folder: {{($folder->parent_id) ? $folder->parent->name : '/'}}</li>
                 <li class="list-group-item">Created: {{$folder->created_at}}</li>
-                <li class="list-group-item">Number of Children Folder: {{$folder->children->count()}}</li>
-                <li class="list-group-item">Number of Children Files: {{$folder->files->count()}}</li>
+                <li class="list-group-item">Number of Folder: {{$folder->children->count()}}</li>
+                <li class="list-group-item">Number of Files: {{$folder->files->count()}}</li>
             </ul>
 
             <hr>
