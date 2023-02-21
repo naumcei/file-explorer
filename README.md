@@ -5,6 +5,8 @@ The **File Explorer** application has the following features
 - Store a new file or create a folder
 - Filter the entire view by folder
 
+The design pattern for the File-Exploder app is the flat fileystem while keeping the meta data for files and folders in database.
+
 One of the benefits of using a flat filesystem is that it can improve the speed of file **search and retrieval**. Since there are no **subdirectories**, the file system doesn't need to **traverse** multiple levels of directories to find the required file.
 
 This can **reduce** the time it takes to access files and improve application performance, particularly when working with large numbers of files.
