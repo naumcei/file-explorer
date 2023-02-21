@@ -32,7 +32,8 @@ The following steps are recommended in order to run app on local env
 
     composer install
 
-**Images**
+
+![enter image description here](https://raw.githubusercontent.com/naumcei/file-explorer/master/storage/screenshoots/docker.png)
 
 
 ## Warm-up the application
