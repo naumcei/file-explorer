@@ -78,6 +78,14 @@ The above command will populate the database and will generate files in a filesy
 On the following route the is a list of generated folders
 http://file-explorer.local:39001/
 
+**Directory structure**
+![enter image description here](https://raw.githubusercontent.com/naumcei/file-explorer/master/storage/screenshoots/ui_1.png)
+
+**Directory information**
+![enter image description here](https://raw.githubusercontent.com/naumcei/file-explorer/master/storage/screenshoots/ui_2.png)
+
+**Directory Search**
+![enter image description here](https://raw.githubusercontent.com/naumcei/file-explorer/master/storage/screenshoots/ui_3.png)
 ## Unit Test
 
     php artisan test
@@ -94,4 +102,11 @@ The above command will execute the following tests
 - test_if_file_has_content
 - test_if_folder_has_files_in_db_and_in_file_system
 
-## App screenshots
+**Unit test screenshoot**
+![enter image description here](https://raw.githubusercontent.com/naumcei/file-explorer/master/storage/screenshoots/unit_test.png)
+
+## Database
+E-R Diagram from Database
+
+![enter image description here](https://raw.githubusercontent.com/naumcei/file-explorer/master/storage/screenshoots/db.png)
+
